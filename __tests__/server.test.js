@@ -15,7 +15,7 @@ describe('sever', () => {
     });
   });
   it('should respond with 200 on /api/v1/food', () => {
-    return mockRequest.get('/api/v1/food').then((results) => {
+    return mockRequest.get('/categories').then((results) => {
       expect(results.status).toBe(200);
     });
   });
