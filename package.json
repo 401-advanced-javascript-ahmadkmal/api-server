@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/401-advanced-javascript-ahmadkmal/api-server/issues"
   },
-  "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/api-server#readme"
+  "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/api-server#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
 }
