@@ -17,6 +17,7 @@
 
 #### Running the app
 
+ json-server --watch ./data/db.json 
 
 #### Tests
 
@@ -27,4 +28,4 @@
 
 #### UML
 
-![UML Diagram](whiteboard.png)
+![UML Diagram](102287461_279769963174997_6082815770184646656_n.jpg)

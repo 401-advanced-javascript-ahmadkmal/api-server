@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/401-advanced-javascript-ahmadkmal/api-server/issues"
   },
-  "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/api-server#readme"
+  "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/api-server#readme",
+  "devDependencies": {
+    "eslint": "^7.1.0"
+  }
 }
