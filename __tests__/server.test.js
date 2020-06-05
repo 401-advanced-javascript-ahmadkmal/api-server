@@ -37,7 +37,7 @@ describe('categories API', () => {
 describe('products API', () => {
   
   it('can post()', () => {
-    const obj = {  name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$',inStock: 'yes'  };
+    const obj = {  name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$' };
     return mockRequest
       .post('/api/v1/products')
       .send(obj)
@@ -51,7 +51,7 @@ describe('products API', () => {
   });
   
   it('can get()', () => {
-    const obj = { name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$',inStock: 'yes' };
+    const obj = { name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$' };
     return mockRequest
       .post('/api/v1/products')
       .send(obj)
