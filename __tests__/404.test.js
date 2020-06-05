@@ -11,7 +11,7 @@ describe('sever', () => {
     });
   });
   it('should respond with 404 on an invalid method', () => {
-    return mockRequest.delete('/fruit').then((results) => {
+    return mockRequest.patch('/categories').then((results) => {
       expect(results.status).toBe(404);
     });
   });

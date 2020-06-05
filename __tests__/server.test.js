@@ -22,12 +22,12 @@ describe('categories API', () => {
   it('can get()', () => {
     const obj = { name: 'orange', description: 'color' };
     return mockRequest
-      .post('/api/v1/food')
+      .post('/api/v1/categories')
       .send(obj)
       .then((data) => {
         return mockRequest.get('/api/v1/categories').then((result) => {
           Object.keys(obj).forEach((key) => {
-            expect(result.body[1][key]).toEqual(obj[key]);
+            expect(result.body.results[0][key]).toEqual(obj[key]);
           });
         });
       });
@@ -37,12 +37,13 @@ describe('categories API', () => {
 describe('products API', () => {
   
   it('can post()', () => {
-    const obj = { name: 'orange ju',category:'orange' ,description: 'vit c',price:'2$',inStock:'instock' };
+    const obj = {  name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$',inStock: 'yes'  };
     return mockRequest
       .post('/api/v1/products')
       .send(obj)
       .then((data) => {
         const record = data.body; // _id
+        
         Object.keys(obj).forEach((key) => {
           expect(record[key]).toEqual(obj[key]);
         });
@@ -50,14 +51,15 @@ describe('products API', () => {
   });
   
   it('can get()', () => {
-    const obj = { name: 'orange ju',category:'orange' ,description: 'vit c',price:'2$',inStock:'instock' };
+    const obj = { name: 'hakona', category: 'batata',description: 'temon and pomba',price: '2$',inStock: 'yes' };
     return mockRequest
       .post('/api/v1/products')
       .send(obj)
       .then((data) => {
-        return mockRequest.get('/api/v1/food').then((result) => {
+        return mockRequest.get('/api/v1/products').then((result) => {
+          console.log('data',result.body.results[0]);
           Object.keys(obj).forEach((key) => {
-            expect(result.body[1][key]).toEqual(obj[key]);
+            expect(result.body.results[0][key]).toEqual(obj[key]);
           });
         });
       });
