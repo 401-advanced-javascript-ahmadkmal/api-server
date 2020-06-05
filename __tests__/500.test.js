@@ -5,7 +5,7 @@ const mockRequest = supergoose(server);
 describe('500 error', () => {
   
   it('return 500 return', () => {
-    const obj = { name: 'orange ju' ,description: 'vit c',price:'2$',inStock:'instock' };
+    const obj = { name: 'orange ju' ,description: 'vit c',price:'2$'};
     return mockRequest
       .post('/api/v1/products')
       .send(obj)
@@ -14,7 +14,7 @@ describe('500 error', () => {
       });
   });
   it('return 500 return', () => {
-    const obj = { name: 'orange ju' ,description: 'vit c',price:'2$',inStock:'instock' };
+    const obj = { name: 'orange ju' ,description: 'vit c',price:'2$' };
     return mockRequest
       .post('/api/v1/product')
       .send(obj)

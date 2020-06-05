@@ -3,7 +3,7 @@ require('@code-fellows/supergoose');
 const categories = require('../lib/models/categories-model.js');
 const product = require('../lib/models/products-model.js');
 const obj = { name: 'hakona', description: 'batata' };
-const obj2 = { name: 'hakona', category: 'batata', description: 'temon and pomba', price: '2$', inStock: 'yes' };
+const obj2 = { name: 'hakona', category: 'batata', description: 'temon and pomba', price: '2$' };
 
 describe('categories Model', () => {
   it('create', () => {
@@ -66,7 +66,7 @@ describe('product Model', () => {
   });
   it('update', () => {
     return product.create(obj2).then((result) => {
-      const obj4 = { name: 'batata', category: 'hakona', description: 'temon and pomba', price: '4$', inStock: 'no' };
+      const obj4 = { name: 'batata', category: 'hakona', description: 'temon and pomba', price: '4$' };
 
       console.log('update 11111111111111',result);
       product.update(result.id, obj4).then(result2 => {
