@@ -17,6 +17,8 @@
 
 #### Running the app
 
+nodemon 
+npm run index.js
 
 #### Tests
 
@@ -27,4 +29,4 @@
 
 #### UML
 
-![UML Diagram](whiteboard.png)
+![UML Diagram](101676426_684295515450162_2698771661406076928_n.jpg)
