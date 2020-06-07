@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest --coverage --verbose",
-    "doc": "jsdoc -c docs/config/jsdoc.config.json"
+    "doc": "jsdoc -c docs/config/jsdoc.config.json",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
