@@ -1,21 +1,32 @@
-# LAB - 00
+# LAB - 10
 
 ## api-server
+
+this api used to add category and product for your supermarket
+
+- get to get the data
+- post to creat new record
+- put to update (need id)
+- delete to delete (need id)
 
 ### Author: ahmadkmal
 
 - [swageer link](https://app.swaggerhub.com/apis/ahmadkmal/class-6/0.1#/default/post_categories)
-- [submission PR](https://github.com/tutuorial-401js/class-00)
-- [tests report](https://github.com/tutuorial-401js/class-00/actions)
-- [front-end](https://tutorial-401js.herokuapp.com/)
+- [submission PR](https://github.com/401-advanced-javascript-ahmadkmal/api-server/tree/class-09)
+- [tests report](https://github.com/401-advanced-javascript-ahmadkmal/api-server/pull/5/checks?check_run_id=745226031)
+- [front-end](https://api-401.herokuapp.com/api/v1/)
 
 ### Setup
 
 #### `.env` requirements
 
-- `PORT` - 300
+- `PORT` - 3000
 
 #### Running the app
+
+- nodemon
+- npm start
+- node index.js
 
 
 #### Tests
